@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market</title>
+    <!-- fontanswome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- booststrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header d-flex flex-column flex-md-row align-items-center p-3 px-md-4 border-bottom box-shadow">
+            <div class="header__logo">
+                <img src="/img/logo.png" alt="logo supermarket">
+            </div>
+            <div class="header__location d-flex">
+                <ul>
+                    <li><i class="far fa-map-marker-alt mr-2"></i>Korean <i class="fal fa-chevron-down ml-2"></i></li>
+                </ul>
+            </div>
+            <div class="header__formsearch box-shadow">
+                <i class="far fa-search mr-2"></i>
+                <input  type="text" placeholder="Search for products" >
+            </div>
+            <nav class="my-2 my-md-0 mr-md-3">
+                <a class="p-4 text-dark" href="#"><i class="fal fa-phone-alt mr-2"></i>1800-000-000</a>
+                <a class="p-4 text-dark" href="#"><i class="fal fa-gift mr-2"></i>Offer</a>
+                <a class="p-4 text-dark" href="#"><i class="fal fa-question-circle mr-2"></i>Help</a>
+            </nav>
+            <a class="btn rounded-circle btn-whistlist" href="#"><i class="fal fa-heart"><span class="numOfProducts">3</span></i></a>
+            
+            <div href="#" class="header__userInfo">
+                <img src="./img/avarta.png" alt="avartar" width="38px" height="38px">
+                <span class="mr-2 ml-2">Join Sena</span><i class="fal fa-chevron-down"></i>
+                <span class="header__userInfo__toggle">
+                    <ul class="m-0">
+                        <div class="mode"><i class="fal fa-moon mr-2 nightMode"></i>Night Mode<i class="far fa-toggle-off ml-4 toggleMode"></i></div>
+                        <li><i class="fal fa-th-large"></i>Dashboard</li>
+                        <li><i class="fal fa-box-open"></i>My Orders</li>
+                        <li><i class="fal fa-heart "></i>My Wishlist</li>
+                        <li><i class="fal fa-wallet "></i>My Wallet</li>
+                        <li><i class="fal fa-map-marker-alt"></i> My Address</li>
+                        <li><i class="fal fa-gift "></i>Offers</li>
+                        <li><i class="fal fa-question-circle "></i>Faqs</li>
+                        <li><i class="fal fa-sign-out-alt"></i>Logout</li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg ">
+            <a class="navbar__category" href="#"><i class="far fa-qrcode mr-2"></i>Select Category</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">New Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Featured Products</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Pages
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Blogs
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="navbar__cart">
+                    <a href="#"><i class="fal fa-shopping-cart mr-2"></i>Cart
+                        <i class="fal fa-chevron-down ml-2"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main role="main">
+        <section class="adverFood">
+            <!-- Swiper -->
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="adverFood__products">
+                            <img src="./img/advertise/adv1.webp" alt="advertise-product-3">
+                            <div class="adverFood__products__desc">
+                                <span class="sale__color">5% OFF</span>
+                                <h6>Buy More And Save More</h6>
+                                <span>Fresh Vegatable</span>
+                            </div>
+                            <a href="#">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="adverFood__products">
+                            <img src="./img/advertise/adv1.webp" alt="advertise-product-3">
+                            <div class="adverFood__products__desc">
+                                <span class="sale__color">5% OFF</span>
+                                <h6>Buy More And Save More</h6>
+                                <span>Fresh Vegatable</span>
+                            </div>
+                            <a href="#">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="adverFood__products">
+                            <img src="./img/advertise/adv1.webp" alt="advertise-product-3">
+                            <div class="adverFood__products__desc">
+                                <span class="sale__color">5% OFF</span>
+                                <h6>Buy More And Save More</h6>
+                                <span>Fresh Vegatable</span>
+                            </div>
+                            <a href="#">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="adverFood__products">
+                            <img src="./img/advertise/adv1.webp" alt="advertise-product-3">
+                            <div class="adverFood__products__desc">
+                                <span class="sale__color">5% OFF</span>
+                                <h6>Buy More And Save More</h6>
+                                <span>Fresh Vegatable</span>
+                            </div>
+                            <a href="#">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="adverFood__products">
+                            <img src="./img/advertise/adv1.webp" alt="advertise-product-3">
+                            <div class="adverFood__products__desc">
+                                <span class="sale__color">5% OFF</span>
+                                <h6>Buy More And Save More</h6>
+                                <span>Fresh Vegatable</span>
+                            </div>
+                            <a href="#">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="adverFood__products">
+                            <img src="./img/advertise/adv1.webp" alt="advertise-product-3">
+                            <div class="adverFood__products__desc">
+                                <span class="sale__color">5% OFF</span>
+                                <h6>Buy More And Save More</h6>
+                                <span>Fresh Vegatable</span>
+                            </div>
+                            <a href="#">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="adverFood__products">
+                            <img src="./img/advertise/adv1.webp" alt="advertise-product-3">
+                            <div class="adverFood__products__desc">
+                                <span class="sale__color">5% OFF</span>
+                                <h6>Buy More And Save More</h6>
+                                <span>Fresh Vegatable</span>
+                            </div>
+                            <a href="#">Shop Now</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- End Swiper -->
+        </section>
+
+        <section class="content container">
+            <div class="content__categories">
+                <span>Shop By</span>
+                <h3>Categories</h3>
+                <div class="content__categories__list d-inline-flex row">
+                    <div class="col-sm items">
+                        <img src="./img/categories/vegan-food.png" alt="">
+                        <span>Pet Care</span>
+                    </div>
+                    <div class="col-sm items">
+                        <img src="./img/categories/dimsum.png" alt="">
+                        <span>Pet Care</span>
+                    </div>
+                    <div class="col-sm items">
+                        <img src="./img/categories/coconut.png" alt="">
+                        <span>Pet Care</span>
+                    </div>
+                    <div class="col-sm items">
+                        <img src="./img/categories/kiwi.png" alt="">
+                        <span>Pet Care</span>
+                    </div>
+                    <div class="col-sm items">
+                        <img src="./img/categories/dragon-fruit.png" alt="">
+                        <span>Pet Care</span>
+                    </div>
+                    <div class="col-sm items">
+                        <img src="./img/categories/pizza.png" alt="">
+                        <span>Pet Care</span>
+                    </div>
+                </div>
+            </div>
+            <div class="content__swipProducts">
+                <span>For You</span>
+                <h3 class="mb-4">Top Featured Products</h3>
+                <!-- Swiper -->
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="content__swipProducts__items">
+                                <div class="content__swipProducts__items__header">
+                                    <span class="discount">6% OFF</span>
+                                    <span class="wishlist"><i class="fal fa-heart"></i></span>
+                                </div>
+                                <img src="./img/product/white-vegetable-healthy-fresh-natural.jpg" alt="" width="100%">
+                                <div class="content__swipProducts__items__content">
+                                    <span class="status">Available (In Stock)</span>
+                                    <h4>Vegatable</h4>
+                                    <span class="price">$12<span class="ml-2"
+                                            style="text-decoration: line-through; color: #bcbcbc;">$15</span></span>
+                                </div>
+                                <div class="content__swipProducts__items__btn d-flex">
+                                    <span class="button">-</span>
+                                    <span class="lable">1</span>
+                                    <span class="button">+</span>
+                                    <span class="addToCart"><i class="fa fa-shopping-cart"
+                                            aria-hidden="true"></i></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content__swipProducts__items">
+                                <div class="content__swipProducts__items__header">
+                                    <span class="discount">6% OFF</span>
+                                    <span class="wishlist"><i class="fal fa-heart"></i></span>
+                                </div>
+                                <img src="./img/product/white-vegetable-healthy-fresh-natural.jpg" alt="" width="100%">
+                                <div class="content__swipProducts__items__content">
+                                    <span class="status">Available (In Stock)</span>
+                                    <h4>Vegatable</h4>
+                                    <span class="price">$12<span class="ml-2"
+                                            style="text-decoration: line-through; color: #bcbcbc;">$15</span></span>
+                                </div>
+                                <div class="content__swipProducts__items__btn d-flex">
+                                    <span class="button">-</span>
+                                    <span class="lable">1</span>
+                                    <span class="button">+</span>
+                                    <span class="addToCart"><i class="fa fa-shopping-cart"
+                                            aria-hidden="true"></i></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content__swipProducts__items">
+                                <div class="content__swipProducts__items__header">
+                                    <span class="discount">6% OFF</span>
+                                    <span class="wishlist"><i class="fal fa-heart"></i></span>
+                                </div>
+                                <img src="./img/product/white-vegetable-healthy-fresh-natural.jpg" alt="" width="100%">
+                                <div class="content__swipProducts__items__content">
+                                    <span class="status">Available (In Stock)</span>
+                                    <h4>Vegatable</h4>
+                                    <span class="price">$12<span class="ml-2"
+                                            style="text-decoration: line-through; color: #bcbcbc;">$15</span></span>
+                                </div>
+                                <div class="content__swipProducts__items__btn d-flex">
+                                    <span class="button">-</span>
+                                    <span class="lable">1</span>
+                                    <span class="button">+</span>
+                                    <span class="addToCart"><i class="fa fa-shopping-cart"
+                                            aria-hidden="true"></i></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content__swipProducts__items">
+                                <div class="content__swipProducts__items__header">
+                                    <span class="discount">6% OFF</span>
+                                    <span class="wishlist"><i class="fal fa-heart"></i></span>
+                                </div>
+                                <img src="./img/product/white-vegetable-healthy-fresh-natural.jpg" alt="" width="100%">
+                                <div class="content__swipProducts__items__content">
+                                    <span class="status">Available (In Stock)</span>
+                                    <h4>Vegatable</h4>
+                                    <span class="price">$12<span class="ml-2"
+                                            style="text-decoration: line-through; color: #bcbcbc;">$15</span></span>
+                                </div>
+                                <div class="content__swipProducts__items__btn d-flex">
+                                    <span class="button">-</span>
+                                    <span class="lable">1</span>
+                                    <span class="button">+</span>
+                                    <span class="addToCart"><i class="fa fa-shopping-cart"
+                                            aria-hidden="true"></i></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content__swipProducts__items">
+                                <div class="content__swipProducts__items__header">
+                                    <span class="discount">6% OFF</span>
+                                    <span class="wishlist"><i class="fal fa-heart"></i></span>
+                                </div>
+                                <img src="./img/product/white-vegetable-healthy-fresh-natural.jpg" alt="" width="100%">
+                                <div class="content__swipProducts__items__content">
+                                    <span class="status">Available (In Stock)</span>
+                                    <h4>Vegatable</h4>
+                                    <span class="price">$12<span class="ml-2"
+                                            style="text-decoration: line-through; color: #bcbcbc;">$15</span></span>
+                                </div>
+                                <div class="content__swipProducts__items__btn d-flex">
+                                    <span class="button">-</span>
+                                    <span class="lable">1</span>
+                                    <span class="button">+</span>
+                                    <span class="addToCart"><i class="fa fa-shopping-cart"
+                                            aria-hidden="true"></i></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content__swipProducts__items">
+                                <div class="content__swipProducts__items__header">
+                                    <span class="discount">6% OFF</span>
+                                    <span class="wishlist"><i class="fal fa-heart"></i></span>
+                                </div>
+                                <img src="./img/product/white-vegetable-healthy-fresh-natural.jpg" alt="" width="100%">
+                                <div class="content__swipProducts__items__content">
+                                    <span class="status">Available (In Stock)</span>
+                                    <h4>Vegatable</h4>
+                                    <span class="price">$12<span class="ml-2"
+                                            style="text-decoration: line-through; color: #bcbcbc;">$15</span></span>
+                                </div>
+                                <div class="content__swipProducts__items__btn d-flex">
+                                    <span class="button">-</span>
+                                    <span class="lable">1</span>
+                                    <span class="button">+</span>
+                                    <span class="addToCart"><i class="fa fa-shopping-cart"
+                                            aria-hidden="true"></i></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content__swipProducts__items">
+                                <div class="content__swipProducts__items__header">
+                                    <span class="discount">6% OFF</span>
+                                    <span class="wishlist"><i class="fal fa-heart"></i></span>
+                                </div>
+                                <img src="./img/product/white-vegetable-healthy-fresh-natural.jpg" alt="" width="100%">
+                                <div class="content__swipProducts__items__content">
+                                    <span class="status">Available (In Stock)</span>
+                                    <h4>Vegatable</h4>
+                                    <span class="price">$12<span class="ml-2"
+                                            style="text-decoration: line-through; color: #bcbcbc;">$15</span></span>
+                                </div>
+                                <div class="content__swipProducts__items__btn d-flex">
+                                    <span class="button">-</span>
+                                    <span class="lable">1</span>
+                                    <span class="button">+</span>
+                                    <span class="addToCart"><i class="fa fa-shopping-cart"
+                                            aria-hidden="true"></i></span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Swiper -->
+            </div>
+            <div class="content__banner">
+                <span>Offers</span>
+                <h3 class="mb-4">Best Values</h3>
+                <div class="row  mb-4">
+                    <div class="col-sm">
+                        <img src="./img/banner/banner1.png" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="col-sm">
+                        <img src="./img/banner/banner2.png" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="col-sm">
+                        <img src="./img/banner/banner3.png" alt="" width="100%" height="100%">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="./img/banner/large-banner.png" alt="" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="content__swipProducts">
+                <span>For You</span>
+                <h3 class="mb-4">Fresh Vegetables & Fruits</h3>
+                <!-- Swiper -->
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="content__swipProducts__items">
+                                <div class="content__swipProducts__items__header">
+                                    <span class="discount">6% OFF</span>
+                                    <span class="wishlist"><i class="fal fa-heart"></i></span>
+                                </div>
+                                <img src="./img/product/white-vegetable-healthy-fresh-natural.jpg" alt="" width="100%">
+                                <div class="content__swipProducts__items__content">
+                                    <span class="status">Available (In Stock)</span>
+                                    <h4>Vegatable</h4>
+                                    <span class="price">$12<span class="ml-2"
+                                            style="text-decoration: line-through; color: #bcbcbc;">$15</span></span>
+                                </div>
+                                <div class="content__swipProducts__items__btn d-flex">
+                                    <span class="button">-</span>
+                                    <span class="lable">1</span>
+                                    <span class="button">+</span>
+                                    <span class="addToCart"><i class="fa fa-shopping-cart"
+                                            aria-hidden="true"></i></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content__swipProducts__items">
+                                <div class="content__swipProducts__items__header">
+                                    <span class="discount">6% OFF</span>
+                                    <span class="wishlist"><i class="fal fa-heart"></i></span>
+                                </div>
+                                <img src="./img/product/white-vegetable-healthy-fresh-natural.jpg" alt="" width="100%">
+                                <div class="content__swipProducts__items__content">
+                                    <span class="status">Available (In Stock)</span>
+                                    <h4>Vegatable</h4>
+                                    <span class="price">$12<span class="ml-2"
+                                            style="text-decoration: line-through; color: #bcbcbc;">$15</span></span>
+                                </div>
+                                <div class="content__swipProducts__items__btn d-flex">
+                                    <span class="button">-</span>
+                                    <span class="lable">1</span>
+                                    <span class="button">+</span>
+                                    <span class="addToCart"><i class="fa fa-shopping-cart"
+                                            aria-hidden="true"></i></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content__swipProducts__items">
+                                <div class="content__swipProducts__items__header">
+                                    <span class="discount">6% OFF</span>
+                                    <span class="wishlist"><i class="fal fa-heart"></i></span>
+                                </div>
+                                <img src="./img/product/white-vegetable-healthy-fresh-natural.jpg" alt="" width="100%">
+                                <div class="content__swipProducts__items__content">
+                                    <span class="status">Available (In Stock)</span>
+                                    <h4>Vegatable</h4>
+                                    <span class="price">$12<span class="ml-2"
+                                            style="text-decoration: line-through; color: #bcbcbc;">$15</span></span>
+                                </div>
+                                <div class="content__swipProducts__items__btn d-flex">
+                                    <span class="button">-</span>
+                                    <span class="lable">1</span>
+                                    <span class="button">+</span>
+                                    <span class="addToCart"><i class="fa fa-shopping-cart"
+                                            aria-hidden="true"></i></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content__swipProducts__items">
+                                <div class="content__swipProducts__items__header">
+                                    <span class="discount">6% OFF</span>
+                                    <span class="wishlist"><i class="fal fa-heart"></i></span>
+                                </div>
+                                <img src="./img/product/white-vegetable-healthy-fresh-natural.jpg" alt="" width="100%">
+                                <div class="content__swipProducts__items__content">
+                                    <span class="status">Available (In Stock)</span>
+                                    <h4>Vegatable</h4>
+                                    <span class="price">$12<span class="ml-2"
+                                            style="text-decoration: line-through; color: #bcbcbc;">$15</span></span>
+                                </div>
+                                <div class="content__swipProducts__items__btn d-flex">
+                                    <span class="button">-</span>
+                                    <span class="lable">1</span>
+                                    <span class="button">+</span>
+                                    <span class="addToCart"><i class="fa fa-shopping-cart"
+                                            aria-hidden="true"></i></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content__swipProducts__items">
+                                <div class="content__swipProducts__items__header">
+                                    <span class="discount">6% OFF</span>
+                                    <span class="wishlist"><i class="fal fa-heart"></i></span>
+                                </div>
+                                <img src="./img/product/white-vegetable-healthy-fresh-natural.jpg" alt="" width="100%">
+                                <div class="content__swipProducts__items__content">
+                                    <span class="status">Available (In Stock)</span>
+                                    <h4>Vegatable</h4>
+                                    <span class="price">$12<span class="ml-2"
+                                            style="text-decoration: line-through; color: #bcbcbc;">$15</span></span>
+                                </div>
+                                <div class="content__swipProducts__items__btn d-flex">
+                                    <span class="button">-</span>
+                                    <span class="lable">1</span>
+                                    <span class="button">+</span>
+                                    <span class="addToCart"><i class="fa fa-shopping-cart"
+                                            aria-hidden="true"></i></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content__swipProducts__items">
+                                <div class="content__swipProducts__items__header">
+                                    <span class="discount">6% OFF</span>
+                                    <span class="wishlist"><i class="fal fa-heart"></i></span>
+                                </div>
+                                <img src="./img/product/white-vegetable-healthy-fresh-natural.jpg" alt="" width="100%">
+                                <div class="content__swipProducts__items__content">
+                                    <span class="status">Available (In Stock)</span>
+                                    <h4>Vegatable</h4>
+                                    <span class="price">$12<span class="ml-2"
+                                            style="text-decoration: line-through; color: #bcbcbc;">$15</span></span>
+                                </div>
+                                <div class="content__swipProducts__items__btn d-flex">
+                                    <span class="button">-</span>
+                                    <span class="lable">1</span>
+                                    <span class="button">+</span>
+                                    <span class="addToCart"><i class="fa fa-shopping-cart"
+                                            aria-hidden="true"></i></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content__swipProducts__items">
+                                <div class="content__swipProducts__items__header">
+                                    <span class="discount">6% OFF</span>
+                                    <span class="wishlist"><i class="fal fa-heart"></i></span>
+                                </div>
+                                <img src="./img/product/white-vegetable-healthy-fresh-natural.jpg" alt="" width="100%">
+                                <div class="content__swipProducts__items__content">
+                                    <span class="status">Available (In Stock)</span>
+                                    <h4>Vegatable</h4>
+                                    <span class="price">$12<span class="ml-2"
+                                            style="text-decoration: line-through; color: #bcbcbc;">$15</span></span>
+                                </div>
+                                <div class="content__swipProducts__items__btn d-flex">
+                                    <span class="button">-</span>
+                                    <span class="lable">1</span>
+                                    <span class="button">+</span>
+                                    <span class="addToCart"><i class="fa fa-shopping-cart"
+                                            aria-hidden="true"></i></span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Swiper -->
+            </div>
+            <div class="content__swipProducts">
+                <span>For You</span>
+                <h3 class="mb-4">Fresh Vegetables & Fruits</h3>
+                <!-- Swiper -->
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="content__swipProducts__items">
+                                <div class="content__swipProducts__items__header">
+                                    <span class="discount">6% OFF</span>
+                                    <span class="wishlist"><i class="fal fa-heart"></i></span>
+                                </div>
+                                <img src="./img/product/white-vegetable-healthy-fresh-natural.jpg" alt="" width="100%">
+                                <div class="content__swipProducts__items__content">
+                                    <span class="status">Available (In Stock)</span>
+                                    <h4>Vegatable</h4>
+                                    <span class="price">$12<span class="ml-2"
+                                            style="text-decoration: line-through; color: #bcbcbc;">$15</span></span>
+                                </div>
+                                <div class="content__swipProducts__items__btn d-flex">
+                                    <span class="button">-</span>
+                                    <span class="lable">1</span>
+                                    <span class="button">+</span>
+                                    <span class="addToCart"><i class="fa fa-shopping-cart"
+                                            aria-hidden="true"></i></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content__swipProducts__items">
+                                <div class="content__swipProducts__items__header">
+                                    <span class="discount">6% OFF</span>
+                                    <span class="wishlist"><i class="fal fa-heart"></i></span>
+                                </div>
+                                <img src="./img/product/white-vegetable-healthy-fresh-natural.jpg" alt="" width="100%">
+                                <div class="content__swipProducts__items__content">
+                                    <span class="status">Available (In Stock)</span>
+                                    <h4>Vegatable</h4>
+                                    <span class="price">$12<span class="ml-2"
+                                            style="text-decoration: line-through; color: #bcbcbc;">$15</span></span>
+                                </div>
+                                <div class="content__swipProducts__items__btn d-flex">
+                                    <span class="button">-</span>
+                                    <span class="lable">1</span>
+                                    <span class="button">+</span>
+                                    <span class="addToCart"><i class="fa fa-shopping-cart"
+                                            aria-hidden="true"></i></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content__swipProducts__items">
+                                <div class="content__swipProducts__items__header">
+                                    <span class="discount">6% OFF</span>
+                                    <span class="wishlist"><i class="fal fa-heart"></i></span>
+                                </div>
+                                <img src="./img/product/white-vegetable-healthy-fresh-natural.jpg" alt="" width="100%">
+                                <div class="content__swipProducts__items__content">
+                                    <span class="status">Available (In Stock)</span>
+                                    <h4>Vegatable</h4>
+                                    <span class="price">$12<span class="ml-2"
+                                            style="text-decoration: line-through; color: #bcbcbc;">$15</span></span>
+                                </div>
+                                <div class="content__swipProducts__items__btn d-flex">
+                                    <span class="button">-</span>
+                                    <span class="lable">1</span>
+                                    <span class="button">+</span>
+                                    <span class="addToCart"><i class="fa fa-shopping-cart"
+                                            aria-hidden="true"></i></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content__swipProducts__items">
+                                <div class="content__swipProducts__items__header">
+                                    <span class="discount">6% OFF</span>
+                                    <span class="wishlist"><i class="fal fa-heart"></i></span>
+                                </div>
+                                <img src="./img/product/white-vegetable-healthy-fresh-natural.jpg" alt="" width="100%">
+                                <div class="content__swipProducts__items__content">
+                                    <span class="status">Available (In Stock)</span>
+                                    <h4>Vegatable</h4>
+                                    <span class="price">$12<span class="ml-2"
+                                            style="text-decoration: line-through; color: #bcbcbc;">$15</span></span>
+                                </div>
+                                <div class="content__swipProducts__items__btn d-flex">
+                                    <span class="button">-</span>
+                                    <span class="lable">1</span>
+                                    <span class="button">+</span>
+                                    <span class="addToCart"><i class="fa fa-shopping-cart"
+                                            aria-hidden="true"></i></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content__swipProducts__items">
+                                <div class="content__swipProducts__items__header">
+                                    <span class="discount">6% OFF</span>
+                                    <span class="wishlist"><i class="fal fa-heart"></i></span>
+                                </div>
+                                <img src="./img/product/white-vegetable-healthy-fresh-natural.jpg" alt="" width="100%">
+                                <div class="content__swipProducts__items__content">
+                                    <span class="status">Available (In Stock)</span>
+                                    <h4>Vegatable</h4>
+                                    <span class="price">$12<span class="ml-2"
+                                            style="text-decoration: line-through; color: #bcbcbc;">$15</span></span>
+                                </div>
+                                <div class="content__swipProducts__items__btn d-flex">
+                                    <span class="button">-</span>
+                                    <span class="lable">1</span>
+                                    <span class="button">+</span>
+                                    <span class="addToCart"><i class="fa fa-shopping-cart"
+                                            aria-hidden="true"></i></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content__swipProducts__items">
+                                <div class="content__swipProducts__items__header">
+                                    <span class="discount">6% OFF</span>
+                                    <span class="wishlist"><i class="fal fa-heart"></i></span>
+                                </div>
+                                <img src="./img/product/white-vegetable-healthy-fresh-natural.jpg" alt="" width="100%">
+                                <div class="content__swipProducts__items__content">
+                                    <span class="status">Available (In Stock)</span>
+                                    <h4>Vegatable</h4>
+                                    <span class="price">$12<span class="ml-2"
+                                            style="text-decoration: line-through; color: #bcbcbc;">$15</span></span>
+                                </div>
+                                <div class="content__swipProducts__items__btn d-flex">
+                                    <span class="button">-</span>
+                                    <span class="lable">1</span>
+                                    <span class="button">+</span>
+                                    <span class="addToCart"><i class="fa fa-shopping-cart"
+                                            aria-hidden="true"></i></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content__swipProducts__items">
+                                <div class="content__swipProducts__items__header">
+                                    <span class="discount">6% OFF</span>
+                                    <span class="wishlist"><i class="fal fa-heart"></i></span>
+                                </div>
+                                <img src="./img/product/white-vegetable-healthy-fresh-natural.jpg" alt="" width="100%">
+                                <div class="content__swipProducts__items__content">
+                                    <span class="status">Available (In Stock)</span>
+                                    <h4>Vegatable</h4>
+                                    <span class="price">$12<span class="ml-2"
+                                            style="text-decoration: line-through; color: #bcbcbc;">$15</span></span>
+                                </div>
+                                <div class="content__swipProducts__items__btn d-flex">
+                                    <span class="button">-</span>
+                                    <span class="lable">1</span>
+                                    <span class="button">+</span>
+                                    <span class="addToCart"><i class="fa fa-shopping-cart"
+                                            aria-hidden="true"></i></span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Swiper -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container p-0">
+            <div class="footer__head">
+                <div class="footer__head__left">
+                    <span class="mr-4"><i class="far fa-phone-alt mr-2"></i>1900-000-000</span>
+                    <span><i class="far fa-envelope mr-2"></i>gocery@gmail.com</span>
+                </div>
+                <ul class="footer__head__right d-flex">
+                        <li><i class="fab fa-facebook-f mr-4"></i>
+                        <li><i class="fab fa-twitter mr-4"></i></li>
+                        <li><i class="fab fa-google-plus-g mr-4"></i></li>
+                        <li><i class="fab fa-linkedin-in mr-4"></i></li>
+                        <li><i class="fab fa-instagram mr-4"></i></li>
+                        <li><i class="fab fa-pinterest-p"></i></li>
+                   
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="footer__main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 aboutf">
+                        <h5>Extras</h5>
+                        <ul class="listf" id="listf-extras">
+                            <li><a href="">Contact Us</a> </li>
+                            <li><a href="">Specials</a></li>
+                            <li><a href="">Affiliate</a></li>
+                            <li><a href="">Brands</a></li>
+                            <li><a href="">Orders History</a></li>
+                            <li><a href="">Site Map</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 aboutf">
+                        <h5>Infomation</h5>
+                        <ul class="listf" id="listf-info">
+                            <li><a href="">About Us</a> </li>
+                            <li><a href="">Delivery Information</a></li>
+                            <li><a href="">Private Policy</a></li>
+                            <li><a href="">Term & Conditions</a></li>
+                            <li><a href="">Orders History</a></li>
+                            <li><a href="">Site Map</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 aboutf">
+                        <h5>My Account</h5>
+                        <ul class="listf" id="listf-account">
+                            <li><a href="">My Account</a> </li>
+                            <li><a href="">Order History</a></li>
+                            <li><a href="">Wish List</a></li>
+                            <li><a href="">Newsletter</a></li>
+                            <li><a href="">Returns</a></li>
+                            <li><a href="">Gift</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 aboutf">
+                        <h5>Contact Us</h5>
+                        <ul class="listf" id="listf-contact">
+                            <li><a href=""><i class="fas fa-map-marker-alt mr-2"></i>42 Dream House, Dreammy street,
+                                    7131 Dreamville, USA</a> </li>
+                            <li><a href=""><i class="fa fa-envelope mr-2" aria-hidden="true"></i>
+                                    company@gmail.com</a></li>
+                            <li><a href=""><i class="fa fa-phone mr-2" aria-hidden="true"></i> 456-456-4512</a></li>
+                            <li><a href=""><i class="fa fa-plane mr-2" aria-hidden="true"></i> Dream City, USA</a>
+                            </li>
+                            <li><a href="">
+                                    <h4><span style="font-size: 16px; font-weight: bold; color: #f55d2c;">OPENING TIME</span></h4>
+                                </a></li>
+                            <li><a href=""><i class="fas fa-clock  mr-2"></i> Mon-Fri: 8:30am - 9:30pm</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer__end">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Term & Conditions</a></li>
+                <li><a href="#">Refund & Return Policy</a></li>
+            </ul>
+            <span><a href="#"><i class="fal fa-copyright mr-2"></i>Copyright 2020 Gambolthemes . All rights reserved</a></span>
+        </div>
+
+    </footer>
+
+
+
+    <!-- Initialize Swiper -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
